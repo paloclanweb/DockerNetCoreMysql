@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /usr/src/build
 COPY . .
 RUN dotnet restore
+RUN dotnet test ./Tests/Tests.csproj
 RUN dotnet publish -c Release -o /usr/src/app
 
 # Stage 2
