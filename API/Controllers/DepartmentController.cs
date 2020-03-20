@@ -1,5 +1,7 @@
 using System.Threading.Tasks;
+using Application.Repos;
 using Domain;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persistence;
 
@@ -10,22 +12,27 @@ namespace API.Controllers
     public class DepartmentController : ControllerBase
     {
         private readonly StudentContext _context;
-        public DepartmentController(StudentContext context)
+        private readonly IDepartment _repo;
+        public DepartmentController(IDepartment repo, StudentContext context )
         {
+            _repo = repo;
             _context = context;
         }
 
 
         // Get department with given id.
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetDepartment(int id)
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<Department>> GetDepartment(int id)
         {
-            var department = await _context.Departments.FindAsync(id);
-            if (department == default(Department))
+            // var department = await _context.Departments.FindAsync(id);
+            var department = await _repo.GetDepartment(id);
+            if (department == null)
             {
                 return NotFound();
             }
-            return Ok(department);
+            return department;
         }
 
         // Add a department to _context.
