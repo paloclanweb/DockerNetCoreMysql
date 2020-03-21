@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj": {}
+    "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj": {
+    "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\gilbert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\gilbert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj"
+              "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\gilbert\\Desktop\\DockerNetCoreMysql\\Domain\\Domain.csproj"
               }
             }
           }
@@ -116,6 +116,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [

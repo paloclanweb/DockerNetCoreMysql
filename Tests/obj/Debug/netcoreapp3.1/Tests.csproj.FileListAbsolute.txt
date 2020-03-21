@@ -119,3 +119,6 @@ C:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\bin\Debug\netcoreapp3.1\Persis
 C:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\obj\Debug\netcoreapp3.1\Tests.csproj.CopyComplete
 C:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\obj\Debug\netcoreapp3.1\Tests.dll
 C:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\obj\Debug\netcoreapp3.1\Tests.pdb
+c:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+c:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+c:\Users\gilbert\Desktop\DockerNetCoreMysql\Tests\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll

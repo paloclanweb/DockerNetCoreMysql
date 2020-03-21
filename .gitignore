@@ -1,2 +1,3 @@
-publish
-bin
+publish/
+bin/
+obj/

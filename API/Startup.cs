@@ -29,7 +29,11 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<StudentContext>(ops => ops.UseInMemoryDatabase("Students"));
+            // services.AddDbContext<StudentContext>(ops => ops.UseInMemoryDatabase("Students"));
+            services.AddDbContextPool<StudentContext>(
+                options => options.UseMySql(Configuration.GetConnectionString("MySQLConnection")
+            ));
+
 
             // Adding Swagger
             services.AddSwaggerGen(c =>
