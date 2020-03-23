@@ -23,6 +23,8 @@ services:
       - db
     build:
       context: .
+      args:
+        URL_PORT: 7909
     ports:
       - "5000:7909"
     image: "webapp:Debug"  
